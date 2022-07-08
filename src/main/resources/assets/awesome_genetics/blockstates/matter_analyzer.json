@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": {"model": "awesome_genetics:block/matter_analyzer" },
+    "facing=north": { "model": "awesome_genetics:block/matter_analyzer" },
+    "facing=south": { "model": "awesome_genetics:block/matter_analyzer", "y": 180 },
+    "facing=west": { "model": "awesome_genetics:block/matter_analyzer", "y": 270 },
+    "facing=east": { "model": "awesome_genetics:block/matter_analyzer", "y": 90 }
+  }
+}

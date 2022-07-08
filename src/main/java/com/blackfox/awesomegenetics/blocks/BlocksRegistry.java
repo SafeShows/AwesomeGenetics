@@ -13,8 +13,8 @@ public class BlocksRegistry {
 
     public final static DeferredRegister<Block>  BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, AwesomeGeneticsMod.MOD_ID);
 
-    public static final RegistryObject<Block> MATTER_ANALYSER = BLOCKS.register("matter_analyzer",
-            () -> new MatterAnalyzer(BlockBehaviour.Properties.of(Material.STONE).strength(1.0f)));
+    public static final RegistryObject<Block> MATTER_ANALYZER = BLOCKS.register("matter_analyzer",
+            () -> new MatterAnalyzer(BlockBehaviour.Properties.of(Material.STONE).strength(1.0f).noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

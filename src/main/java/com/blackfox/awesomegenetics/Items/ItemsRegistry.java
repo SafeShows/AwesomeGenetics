@@ -3,14 +3,11 @@ package com.blackfox.awesomegenetics.Items;
 import com.blackfox.awesomegenetics.AwesomeGeneticsMod;
 import com.blackfox.awesomegenetics.blocks.BlocksRegistry;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.NotNull;
 
 public class ItemsRegistry {
 
@@ -27,9 +24,9 @@ public class ItemsRegistry {
 
 
     // Block Items
-    public static final RegistryObject<BlockItem> MATTER_ANALYSER_ITEM = ITEMS.register("matter_analyser",
+    public static final RegistryObject<BlockItem> MATTER_ANALYZER_ITEM = ITEMS.register("matter_analyzer",
             () -> new BlockItem(
-                    BlocksRegistry.MATTER_ANALYSER.get(),
+                    BlocksRegistry.MATTER_ANALYZER.get(),
                     new Item.Properties().tab(AwesomeGeneticsMod.CREATIVE_MODE_TAB)
             )
     );
